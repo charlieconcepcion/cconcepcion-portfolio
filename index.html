@@ -1,224 +1,105 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Charlie Concepcion — Portfolio</title>
-<style>
-:root{
---bg:#0f1724;
---card:#071427;
---muted:#94a3b8;
---accent:#06b6d4;
---text:#e6eef6;
-}
-html,body{height:100%}
-body{
-margin:0;
-padding:28px;
-font-family:Inter,system-ui,-apple-system,sans-serif;
-line-height:1.5;
-background:linear-gradient(180deg,#071428 0%,#021026 100%);
-color:var(--text);
-}
-.wrap{max-width:760px;margin:0 auto}
-header{
-padding:30px 24px;
-border-radius:14px;
-background:linear-gradient(180deg,rgba(255,255,255,.03),transparent);
-box-shadow:0 6px 20px rgba(2,6,23,.6);
-}
-h1{margin:0;font-size:34px}
-.meta{
-margin-top:10px;
-color:var(--muted);
-font-size:15px;
-}
-.projects{
-margin-top:22px;
-display:flex;
-flex-direction:column;
-gap:18px;
-}
-.project{
-padding:20px;
-border-radius:12px;
-border:1px solid rgba(255,255,255,.05);
-background:linear-gradient(180deg,rgba(255,255,255,.02),transparent);
-}
-#philosophy,#process,#clients{
-border:1px solid rgba(6,182,212,.18);
-}
-h2{
-margin:0 0 12px;
-font-size:22px;
-}
-.role{
-font-weight:600;
-color:var(--accent);
-font-size:13px;
-}
-.timeline{
-margin:6px 0 12px;
-font-size:13px;
-color:var(--muted);
-}
-.images{
-display:flex;
-flex-direction:column;
-gap:12px;
-}
-img{
-width:100%;
-border-radius:10px;
-display:block;
-}
-.desc{
-margin-top:12px;
-color:var(--muted);
-}
-ul.skills{
-margin:12px 0 0 18px;
-color:var(--muted);
-}
-li{margin-bottom:8px}
-footer{
-margin:38px 0 70px;
-text-align:center;
-color:var(--muted);
-font-size:14px;
-}
-@media(min-width:900px){
-body{padding:44px}
-h1{font-size:40px}
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Charlie Concepcion — Portfolio</title>
+  <style>
+    :root{--bg:#0f1724;--card:#071427;--muted:#94a3b8;--accent:#06b6d4;--text:#e6eef6}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.45;background:linear-gradient(180deg,#071428 0%, #021026 100%);color:var(--text);-webkit-font-smoothing:antialiased;padding:28px}
+    .wrap{max-width:720px;margin:0 auto}
+    header{display:flex;flex-direction:column;gap:8px;padding:28px 22px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    h1{font-size:28px;margin:0}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+    .contact{margin-top:8px;color:var(--muted);font-size:14px}
+    .projects{margin-top:18px;display:flex;flex-direction:column;gap:18px}
+    .project{background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .project h2{margin:0 0 6px 0;font-size:20px}
+    .role{font-weight:600;color:var(--accent);font-size:13px}
+    .timeline{color:var(--muted);font-size:13px;margin-bottom:10px}
+    .images{display:flex;flex-direction:column;gap:10px}
+    img{width:100%;height:auto;border-radius:8px;display:block;border:1px solid rgba(255,255,255,0.03)}
+    .desc{margin-top:10px;color:var(--muted);font-size:15px}
+    ul.skills{margin:10px 0 0 18px;color:var(--muted)}
+    footer{margin:32px 0 80px 0;color:var(--muted);font-size:13px;text-align:center}
+    @media(min-width:900px){body{padding:44px}h1{font-size:34px}}
+    .cta{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.02);font-size:14px;color:var(--text);text-decoration:none}
+  </style>
 </head>
 <body>
-<div class="wrap">
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Charlie Concepcion — UX Designer</h1>
+        <div class="meta">Product-focused UX Designer • Research, IA, Prototyping, Visual Design</div>
+      </div>
+      <!-- <div class="contact">Email: <a href="mailto:john@example.com" style="color:var(--accent);text-decoration:none">john@example.com</a> • NYC / Remote</div> -->
+    </header>
 
-<header>
-<h1>Charlie Concepcion — Product & UX Designer</h1>
-<div class="meta">
-Designing intuitive digital experiences through strategy, research,
-interaction design and scalable systems.
-</div>
-<p class="desc">
-Portfolio featuring enterprise, product and hospitality work focused on
-user-centered problem solving, conversion improvements and design systems.
-</p>
-</header>
+    <main class="projects"> 
 
-<main class="projects">
+      <section class="project" id="willkie">
+        <h2>Willkie — Enterprise site redesign</h2>
+        <div class="role">Role: UX Designer — End-to-end</div>
+        <div class="timeline">Timeline: Research → Wireframes → Prototype → Handoff</div>
 
-<section class="project" id="philosophy">
-<h2>Design Philosophy</h2>
-<p class="desc">
-My design approach centers on solving business and user problems through
-clarity, usability and thoughtful systems thinking.
-</p>
-<ul class="skills">
-<li>User-centered decisions over aesthetic trends</li>
-<li>Research-informed problem solving</li>
-<li>Simple scalable interfaces with strong information hierarchy</li>
-<li>Accessibility and usability as foundational principles</li>
-<li>Collaboration between design, product and engineering</li>
-</ul>
-</section>
+        <div class="images">
+          <img src="https://i.imgur.com/TiqHdTa.png" alt="Willkie screenshot 1">
+          <img src="https://i.imgur.com/5r3MbsN.jpeg" alt="Willkie screenshot 2">
+          <img src="https://i.imgur.com/5sXwdqq.png" alt="Willkie screenshot 3">
+        </div>
 
-<section class="project" id="process">
-<h2>Process</h2>
-<ul class="skills">
-<li>Research & Discovery</li>
-<li>Information Architecture</li>
-<li>Wireframing & Prototyping</li>
-<li>Testing & Iteration</li>
-<li>Design Systems & Developer Handoff</li>
-</ul>
-</section>
+        <p class="desc">Summary: Led UX work for the Willkie site redesign — conducted stakeholder interviews and user research, created information architecture and low-fi to hi-fi wireframes, built interactive prototypes for usability testing, and produced detailed design specs for engineering handoff.</p>
+        <ul class="skills">
+          <li>User research & interviews</li>
+          <li>Information architecture & content strategy</li>
+          <li>Interactive prototyping (Figma / Principle)</li>
+          <li>Handoff & dev support (specs, assets)</li>
+        </ul>
+      </section>
 
-<section class="project" id="clients">
-<h2>Selected Previous Work</h2>
-<ul class="skills">
-<li>Willkie Farr & Gallagher</li>
-<li>Rodo</li>
-<li>Casa de Campo</li>
-<li>Enterprise Web Experiences</li>
-<li>Conversion-Focused Product UX</li>
-</ul>
-</section>
+      <section class="project" id="rodo">
+        <h2>Rodo — Product experience improvements</h2>
+        <div class="role">Role: UX Designer — Product team</div>
+        <div class="timeline">Timeline: Discovery → Prototype → QA</div>
 
-<section class="project" id="willkie">
-<h2>Willkie — Enterprise Site Redesign</h2>
-<div class="role">Role: UX Designer — End-to-End</div>
-<div class="timeline">Research → Wireframes → Prototype → Handoff</div>
+        <div class="images">
+          <!-- <img src="https://i.imgur.com/LZ5taes.jpeg" alt="Rodo screenshot 1"> -->
+          <img src="https://i.imgur.com/wOm9irm.png" alt="Rodo screenshot 2">
+        </div>
 
-<div class="images">
-<img src="https://i.imgur.com/TiqHdTa.png" alt="Willkie 1">
-<img src="https://i.imgur.com/5r3MbsN.jpeg" alt="Willkie 2">
-<img src="https://i.imgur.com/5sXwdqq.png" alt="Willkie 3">
-</div>
+        <p class="desc">Summary: Improved core user flows by mapping journeys, running usability tests on prototypes, iterating on microinteraction and error states, and aligning the final UI with accessibility guidelines.</p>
+        <ul class="skills">
+          <li>Journey mapping & task analysis</li>
+          <li>Usability testing & iteration</li>
+          <li>Accessibility reviews (WCAG basics)</li>
+        </ul>
+      </section>
 
-<p class="desc">
-Led end-to-end UX for an enterprise redesign, from stakeholder discovery
-and information architecture through prototyping and developer handoff.
-Focused on improving content discoverability, simplifying navigation,
-and modernizing the user experience.
-</p>
-<ul class="skills">
-<li>Problem: Complex information architecture</li>
-<li>Approach: Research, wireframes, prototyping</li>
-<li>Outcome: Improved usability and scalable content structure</li>
-</ul>
-</section>
+      <section class="project" id="casadecampo">
+        <h2>Casa de Campo — Hospitality booking UX</h2>
+        <div class="role">Role: UX / Visual Designer</div>
+        <div class="timeline">Timeline: Concept → Visual design → Delivery</div>
 
-<section class="project" id="rodo">
-<h2>Rodo — Product Experience Improvements</h2>
-<div class="role">Role: UX Designer — Product Team</div>
-<div class="timeline">Discovery → Prototype → QA</div>
+        <div class="images">
+          <img src="https://i.imgur.com/fvo0yxa.jpeg" alt="Casa de Campo screenshot 1">
+          <img src="https://i.imgur.com/wVAHWrG.png" alt="Casa de Campo screenshot 2">
+        </div>
 
-<div class="images">
-<img src="https://i.imgur.com/wOm9irm.png" alt="Rodo">
-</div>
+        <p class="desc">Summary: Designed a streamlined booking experience — prototyped reservation flows, optimized form interactions, and delivered visual assets and a pattern library for responsive implementation.</p>
+        <ul class="skills">
+          <li>Reservation flow design</li>
+          <li>Form optimization & validation patterns</li>
+          <li>Design system tokens & components</li>
+        </ul>
+      </section>
 
-<p class="desc">
-Improved core product flows through journey mapping, usability testing
-and iterative prototype refinement focused on conversion and friction reduction.
-</p>
-<ul class="skills">
-<li>Problem: Friction in core user flows</li>
-<li>Approach: Testing, interaction refinement, accessibility review</li>
-<li>Outcome: More intuitive and efficient product experience</li>
-</ul>
-</section>
+    </main>
 
-<section class="project" id="casadecampo">
-<h2>Casa de Campo — Hospitality Booking UX</h2>
-<div class="role">Role: UX / Visual Designer</div>
-<div class="timeline">Concept → Visual Design → Delivery</div>
-
-<div class="images">
-<img src="https://i.imgur.com/fvo0yxa.jpeg" alt="Casa 1">
-<img src="https://i.imgur.com/wVAHWrG.png" alt="Casa 2">
-</div>
-
-<p class="desc">
-Designed a streamlined booking experience through reservation flow
-optimization, responsive interface design and reusable component patterns.
-</p>
-<ul class="skills">
-<li>Problem: Booking flow complexity</li>
-<li>Approach: UX strategy, prototyping, visual systems</li>
-<li>Outcome: Cleaner booking experience and stronger design consistency</li>
-</ul>
-</section>
-
-</main>
-
-<footer>
-Available for Product / UX opportunities
-</footer>
-
-</div>
+    <!-- <footer>
+      <div>Available for freelance or full-time roles • <a class="cta" href="#contact">Download PDF resume</a></div>
+    </footer> -->
+  </div>
 </body>
 </html>
