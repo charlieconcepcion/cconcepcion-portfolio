@@ -1,0 +1,29 @@
+/* status classes */
+.status-billable { background-color: var(--light-teal) }
+.status-probono { background-color: var(--bright-blue) }
+.status-open { background-color: var(--red) }
+
+.status-available, .status-available::before {background-color: var(--green) !important;}
+.status-new-matter { background-color: var(--new-green) !important; color: white; height: 10px !important; width: 20px !important; }
+.status-discreet-work, .status-discreet-work::before {background-color: var(--light-green) !important;}
+.status-at-capacity, .status-at-capacity::before {background-color: var(--yellow) !important;}
+.status-underwater {background-color: var(--dark-red) !important;}
+.status-need-info, .status-need-info::before {background-color: var(--gray) !important;}
+.status-time-off {background-color: var(--light-blue) !important;}
+
+
+/* font awesome icons */
+i.fa-solid.fa-envelope,
+i.fa-solid.fa-phone{
+    color: #92B4C4;
+    margin-right: 6px;
+}
+
+/*** fonts temp  ***/
+
+.roboto-condensed {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
